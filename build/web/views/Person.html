@@ -1,0 +1,19 @@
+<h1>Routing Example 1</h1>
+<div>
+    <div class="col-md-9">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Detail</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr  ng-repeat="person in persons">
+                    <td>{{person.name}}</td>
+                    <td><a href="#/info/{{$index}}">{{person.details}}</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
